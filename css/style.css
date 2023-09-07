@@ -3,7 +3,7 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 42px;
 }
 
@@ -30,15 +30,45 @@
   font-size: 5.5rem;
 }
 
+#anim {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: scroll 10s linear infinite;
+  display: flex;
+}
+
+#anim:hover {
+  animation-play-state: paused;
+}
+
+.brand1 {
+  margin-right: 124px;
+  min-width: 150px;
+  min-height: 100px;
+  position: relative;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(60%);
+  }
+  100% {
+    transform: translateX(-169%);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html,
 body {
   font-family: "Raleway", sans-serif;
   background-color: #ede6da;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -48,6 +78,7 @@ a {
 #navbar {
   padding: 42px 0;
   border-bottom: 1px solid #959595;
+  overflow: hidden;
 }
 #navbar img {
   display: block;
@@ -108,4 +139,21 @@ a {
   width: 50%;
   overflow: hidden;
   height: 100%;
+}
+
+#brands {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 32px;
+  background-color: #24251e;
+}
+#brands h2 {
+  color: #ede6da;
+  text-align: center;
+  margin: 32px 0 24px;
+  font-weight: 300;
+}
+#brands #anim img {
+  height: 200px;
 }

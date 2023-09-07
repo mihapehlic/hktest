@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'animations';
 
 * {
   box-sizing: border-box;
@@ -7,9 +8,11 @@
   padding: 0;
 }
 
+html,
 body {
   font-family: 'Raleway', sans-serif;
   background-color: $primary-color;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -19,6 +22,7 @@ a {
 #navbar {
   padding: 42px 0;
   border-bottom: 1px solid #959595;
+  overflow: hidden;
 
   img {
     display: block;
@@ -91,5 +95,24 @@ a {
     width: 50%;
     overflow: hidden;
     height: 100%;
+  }
+}
+
+#brands {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 32px;
+  background-color: $dark-color;
+
+  h2 {
+    color: $primary-color;
+    text-align: center;
+    margin: 32px 0 24px;
+    font-weight: 300;
+  }
+
+  #anim img {
+    height: 200px;
   }
 }
