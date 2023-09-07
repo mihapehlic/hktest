@@ -1,9 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 42px;
+}
+
+.btn {
+  background-color: #24251e;
+  display: inline-block;
+  padding: 16px 64px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ede6da;
+  border: 1px solid #24251e;
+}
+
+.btn:hover {
+  background-color: #ede6da;
+  border: 1px solid #24251e;
+  color: #24251e;
+  letter-spacing: 3.3px;
+  transition: 0.4s;
+}
+
+.text-secondary {
+  font-family: "Lora", sans-serif;
+  font-size: 5.5rem;
 }
 
 * {
@@ -14,21 +38,23 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #ede6da;
 }
 
 a {
   text-decoration: none;
-  display: block;
 }
 
 #navbar {
-  padding: 24px 0;
+  padding: 42px 0;
+  border-bottom: 1px solid #959595;
 }
 #navbar img {
   display: block;
 }
 #navbar .flex {
   display: flex;
+  height: 100%;
   justify-content: space-between;
   overflow: hidden;
   align-items: center;
@@ -57,14 +83,23 @@ a {
 }
 #hero .flex {
   display: flex;
+  height: 100%;
+  align-items: center;
 }
 #hero .hero-text {
-  width: 30vw;
+  width: 70%;
   z-index: 10;
 }
 #hero .hero-text h1 {
-  font-size: 4rem;
+  font-size: 4.7rem;
   margin-bottom: 24px;
+  font-weight: 500;
+}
+#hero .hero-text p {
+  width: 50%;
+  opacity: 70%;
+  line-height: 1.7rem;
+  margin-bottom: 32px;
 }
 #hero .img-float {
   position: absolute;

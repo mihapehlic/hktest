@@ -1,6 +1,31 @@
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 42px;
+}
+
+.btn {
+  background-color: $dark-color;
+  display: inline-block;
+  padding: 16px 64px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $primary-color;
+  border: 1px solid $dark-color;
+}
+
+.btn:hover {
+  background-color: $primary-color;
+  border: 1px solid $dark-color;
+  color: $dark-color;
+  letter-spacing: 3.3px;
+  transition: 0.4s;
+}
+
+.text-secondary {
+  font-family: 'Lora', sans-serif;
+  //   -webkit-text-fill-color: transparent;
+  //   -webkit-text-stroke: 2px;
+  font-size: 5.5rem;
 }
