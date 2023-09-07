@@ -1,0 +1,83 @@
+@import 'utilities';
+@import 'config';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+#navbar {
+  padding: 24px 0;
+
+  img {
+    display: block;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+
+    .nav-logo {
+      img {
+        height: 100%;
+      }
+    }
+
+    .nav-menu {
+      display: flex;
+
+      li {
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 0 24px;
+      }
+    }
+
+    .nav-socials {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}
+
+#hero {
+  height: 1000px;
+  position: relative;
+
+  .flex {
+    display: flex;
+  }
+
+  .hero-text {
+    width: 30vw;
+    z-index: 10;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 24px;
+    }
+  }
+
+  .img-float {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    overflow: hidden;
+    height: 100%;
+  }
+}
